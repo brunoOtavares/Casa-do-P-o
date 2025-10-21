@@ -3,6 +3,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../config/firebase';
 import ProductCard from '../components/ProductCard';
 import { Search, X } from 'lucide-react';
+import { textIncludes } from '../utils/textUtils';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -32,10 +33,10 @@ const Products = () => {
       filtered = filtered.filter(p => p.category === selectedCategory);
     }
 
-    // Filtrar por busca
+    // Filtrar por busca (ignora acentos)
     if (searchTerm.trim() !== '') {
       filtered = filtered.filter(p =>
-        p.name.toLowerCase().includes(searchTerm.toLowerCase())
+        textIncludes(p.name, searchTerm)
       );
     }
 

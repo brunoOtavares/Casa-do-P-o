@@ -26,7 +26,7 @@ const Contact = () => {
 
     // Enviar via WhatsApp
     const message = `Olá! Meu nome é ${formData.name}.\n\nEmail: ${formData.email}\nTelefone: ${formData.phone}\n\nMensagem: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5521999530686?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 
     setSubmitted(true);

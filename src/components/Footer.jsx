@@ -15,19 +15,19 @@ const Footer = () => {
         <div className="space-y-3 max-w-sm mx-auto">
           <div className="flex items-start gap-3 bg-white bg-opacity-10 p-3 rounded-2xl">
             <MapPin size={18} className="text-secondary-400 mt-0.5 flex-shrink-0" />
-            <span className="text-sm">Rua das Flores, 123 - Centro, SP</span>
+            <span className="text-sm">Rua Visconde de seabra, 119 , lote22  - Santa luzia, SG</span>
           </div>
 
           <div className="flex items-start gap-3 bg-white bg-opacity-10 p-3 rounded-2xl">
             <Phone size={18} className="text-secondary-400 mt-0.5 flex-shrink-0" />
-            <span className="text-sm">(11) 9 9999-9999</span>
+            <span className="text-sm">(21) 999530686</span>
           </div>
 
           <div className="flex items-start gap-3 bg-white bg-opacity-10 p-3 rounded-2xl">
             <Clock size={18} className="text-secondary-400 mt-0.5 flex-shrink-0" />
             <div className="text-sm">
-              <div>Seg-Sex: 06:00 - 20:00</div>
-              <div>Sáb-Dom: 07:00 - 18:00</div>
+              <div>Seg-Sáb: 06:00 - 20:00</div>
+              <div>Dom: 07:00 - 12:00</div>
             </div>
           </div>
         </div>
