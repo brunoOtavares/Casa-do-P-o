@@ -68,7 +68,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const generateWhatsAppMessage = () => {
-    const phoneNumber = '5511999999999'; // Substitua pelo número da padaria
+    const phoneNumber = '5521999530686'; // Substitua pelo número da padaria
     let message = 'Olá! Gostaria de fazer o seguinte pedido:\n\n';
 
     cartItems.forEach(item => {

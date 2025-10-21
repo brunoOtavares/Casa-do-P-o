@@ -382,6 +382,7 @@ const Admin = () => {
                     <option value="bolos">Bolos</option>
                     <option value="doces">Doces</option>
                     <option value="salgados">Salgados</option>
+                    <option value="diversos">Diversos</option>
                   </select>
                 </div>
 

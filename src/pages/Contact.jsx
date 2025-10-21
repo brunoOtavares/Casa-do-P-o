@@ -63,9 +63,8 @@ const Contact = () => {
             <div>
               <h3 className="font-bold text-base mb-1">Endereço</h3>
               <p className="text-gray-600 text-sm">
-                Rua das Flores, 123<br />
-                Centro - São Paulo, SP<br />
-                CEP: 01234-567
+                Rua Visconde de seabra, 119 , lote22 <br />
+                 Santa luzia, São Gonçalo , RJ<br />
               </p>
             </div>
           </div>
@@ -78,8 +77,7 @@ const Contact = () => {
             <div>
               <h3 className="font-bold text-base mb-1">Telefone</h3>
               <p className="text-gray-600 text-sm">
-                (11) 9 9999-9999<br />
-                (11) 3333-3333
+                (21) 999530686<br />
               </p>
             </div>
           </div>
@@ -92,8 +90,7 @@ const Contact = () => {
             <div>
               <h3 className="font-bold text-base mb-1">Email</h3>
               <p className="text-gray-600 text-sm">
-                contato@casadopao.com.br<br />
-                vendas@casadopao.com.br
+                Matavaes58@gmail.com<br />
               </p>
             </div>
           </div>
@@ -106,8 +103,8 @@ const Contact = () => {
             <div>
               <h3 className="font-bold text-base mb-1">Horário</h3>
               <p className="text-gray-600 text-sm">
-                <strong>Seg-Sex:</strong> 06:00 - 20:00<br />
-                <strong>Sáb-Dom:</strong> 07:00 - 18:00
+                <strong>Seg-Sáb:</strong> 06:00 - 20:00<br />
+                <strong>Dom:</strong> 07:00 - 12:00
               </p>
             </div>
           </div>
@@ -116,7 +113,7 @@ const Contact = () => {
         {/* Mapa */}
         <div className="rounded-3xl overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977!2d-46.6333094!3d-23.5505199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjkiUyA0NsKwMzgnMDAuMyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3676.9234!2d-42.981869!3d-22.797638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ3JzUxLjUiUyA0MsKwNTgnNTQuNyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
             width="100%"
             height="250"
             style={{ border: 0 }}
