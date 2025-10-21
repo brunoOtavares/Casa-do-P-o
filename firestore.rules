@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Regras para a coleção de produtos
+    match /products/{productId} {
+      // Qualquer pessoa pode LER os produtos (público)
+      allow read: if true;
+
+      // Apenas usuários autenticados podem ESCREVER (criar, atualizar, deletar)
+      allow create, update, delete: if request.auth != null;
+    }
+
+    // Regra padrão: negar acesso a outras coleções
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

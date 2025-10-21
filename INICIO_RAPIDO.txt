@@ -1,0 +1,58 @@
+================================================================================
+                    CASA DO PÃO - INÍCIO RÁPIDO
+================================================================================
+
+O site já está configurado e rodando!
+
+🌐 ACESSE AGORA:
+   http://localhost:5174
+
+📋 PÁGINAS DISPONÍVEIS:
+   - Home:         http://localhost:5174/
+   - Produtos:     http://localhost:5174/produtos
+   - Carrinho:     http://localhost:5174/carrinho
+   - Sobre:        http://localhost:5174/sobre
+   - Contato:      http://localhost:5174/contato
+   - Admin:        http://localhost:5174/admin (senha: admin123)
+
+✅ O QUE JÁ ESTÁ FUNCIONANDO:
+   ✓ Design moderno com cores azul, amarelo e marrom
+   ✓ Navegação entre páginas
+   ✓ Produtos de exemplo (mock data)
+   ✓ Carrinho de compras com persistência
+   ✓ Integração com WhatsApp
+   ✓ Painel administrativo
+   ✓ Layout responsivo (mobile e desktop)
+
+⚠️  PRÓXIMOS PASSOS IMPORTANTES:
+
+1. CONFIGURAR FIREBASE (para banco de dados real):
+   - Leia o arquivo: INSTRUCOES_IMPORTANTES.md
+   - Seção: "1. Configuração do Firebase"
+
+2. CONFIGURAR WHATSAPP:
+   - Arquivo: src/contexts/CartContext.jsx (linha 74)
+   - Arquivo: src/pages/Contact.jsx (linha 28)
+   - Substitua 5511999999999 pelo número real
+
+3. ADICIONAR PRODUTOS:
+   - Acesse: http://localhost:5174/admin
+   - Senha: admin123
+   - Adicione seus produtos reais
+
+4. PERSONALIZAR INFORMAÇÕES:
+   - Endereço, telefone, email, horários
+   - Veja o arquivo: INSTRUCOES_IMPORTANTES.md
+
+📚 DOCUMENTAÇÃO COMPLETA:
+   - README.md - Visão geral do projeto
+   - INSTRUCOES_IMPORTANTES.md - Passo a passo detalhado
+
+🚀 COMANDOS ÚTEIS:
+   npm run dev     - Executar servidor local
+   npm run build   - Gerar versão de produção
+   npm run preview - Visualizar build de produção
+
+💡 DICA: Comece adicionando produtos pelo painel admin!
+
+================================================================================
