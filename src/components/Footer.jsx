@@ -3,7 +3,7 @@ import { MapPin, Phone, Clock, Mail, Heart } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-br from-primary-800 via-primary-900 to-accent-900 text-white mt-12 overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-primary-800 via-primary-900 to-accent-900 text-white mt-12 overflow-hidden z-10">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-48 h-48 bg-primary-500/10 rounded-full blur-3xl"></div>

@@ -2,15 +2,25 @@ import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { useCart } from '../contexts/CartContext';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onProductClick }) => {
   const { addToCart } = useCart();
 
-  const handleAddToCart = () => {
-    addToCart(product);
+  const handleCardClick = () => {
+    if (onProductClick) {
+      onProductClick(product);
+    }
+  };
+
+  const handleAddToCart = (e) => {
+    e.stopPropagation(); // Prevent card click when button is clicked
+    // Button is now disabled - no functionality
   };
 
   return (
-    <div className="relative card p-4 flex gap-4 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group bg-gradient-to-br from-white to-warm-cream">
+    <div
+      onClick={handleCardClick}
+      className="relative card p-4 flex gap-4 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group bg-gradient-to-br from-white to-warm-cream cursor-pointer"
+    >
       {/* Badge decorativo se for destaque */}
       {product.featured && (
         <div className="absolute -top-2 -right-2 bg-gradient-to-r from-secondary-500 to-secondary-400 text-gray-900 text-xs font-black px-3 py-1 rounded-full shadow-lg z-10">
@@ -47,12 +57,11 @@ const ProductCard = ({ product }) => {
           </div>
           <button
             onClick={handleAddToCart}
-            className="relative bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white p-3.5 rounded-full shadow-lg hover:shadow-2xl transition-all active:scale-95 group-hover:scale-110"
+            disabled
+            className="relative bg-gradient-to-r from-gray-400 to-gray-500 text-white p-3.5 rounded-full shadow-lg opacity-60 cursor-not-allowed"
             aria-label="Adicionar ao carrinho"
           >
             <ShoppingCart size={20} className="stroke-[2.5]" />
-            {/* Pulse effect */}
-            <span className="absolute inset-0 rounded-full bg-primary-400 animate-ping opacity-20"></span>
           </button>
         </div>
       </div>
